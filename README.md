@@ -9,7 +9,7 @@ Folgende Fragestellungne werden behandelt:
 2. Geografische Unterschiede: Gibt es signifikante Unterschiede bei den durchschnittlichen Kosten zwischen den vier Regionen (`northeast`, `northwest`, `southeast`, `southwest`)?
 3. Körperliche Faktoren: Wie beeinflussen Alter und BMI (Body Mass Index) in Kombination mit anderen Faktoren (wie z.B. der Anzahl der Kinder) die individuellen Kosten
 
-##  atensatz-Übersicht
+##  Datensatz-Übersicht
 Der Datensatz (`insurance.csv`) enthält 7 Spalten:
 
 | Spalte | Beschreibung | Datentyp |
