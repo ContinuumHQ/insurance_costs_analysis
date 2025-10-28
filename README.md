@@ -30,3 +30,7 @@ Der Datensatz (`insurance.csv`) enthält 7 Spalten:
     * Häufigkeiten
     * Korrelationen (z.B. zwischen Alter und Kosten)
 4.  Ergebnispräsentation: Zusammenfassung der Ergebnisse.
+
+### Visualisierungen 
+Visualisierungen im Notebook:
+* Regionale Kosten: Ein Bar-Chart visualisiert die durchschnittlichen Kosten über die vier Regionen und bestätigt die höchsten Kosten im Südosten.
