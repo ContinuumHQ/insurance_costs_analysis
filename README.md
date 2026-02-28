@@ -34,3 +34,8 @@ Der Datensatz (`insurance.csv`) enthält 7 Spalten:
 ### Visualisierungen 
 Visualisierungen im Notebook:
 * Regionale Kosten: Ein Bar-Chart visualisiert die durchschnittlichen Kosten über die vier Regionen und bestätigt die höchsten Kosten im Südosten.
+
+### Hinweis zu diesem Projekt:
+Dieses Repository dokumentiert meine ersten Schritte in der Datenanalyse mit Python. Ich habe den Code bewusst in seinem ursprünglichen Zustand gelassen (inkl. kleinerer Library-Warnungen), um meine Lernkurve authentisch abzubilden.
+
+Wer sehen möchte, wie ich heute sauberen, industriereifen Code und fortgeschrittene schreibe, sollte sich unbedingt mein aktuelles Portfolio [https://github.com/ContinuumHQ/portfolio] ansehen.
