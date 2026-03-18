@@ -1,41 +1,60 @@
 # US Medical Insurance Costs Analysis
 
-## Projektziele
-Das Hauptziel dieses Projekts ist die Durchführung einer unabhängigen explorativen Datenanalyse (EDA) des "US Medical Insurance Costs Dataset", um die wichtigsten Prädiktoren für medizinische Kosten zu identifizieren.
+> Baseline project — one of my first Python scripts, built during the Codecademy
+> Data Scientist certification. Intentionally unrefactored.
+> The contrast to [hiring-gap-analysis](https://github.com/ContinuumHQ/hiring-gap-analysis)
+> tells the learning curve better than any CV.
 
-Folgende Fragestellungne werden behandelt:
+---
 
-1. Rauchergewohnheiten: Wie hoch ist der durchschnittliche Unterschied bei den Kosten zwischen Rauchern und Nichtrauchern? 
-2. Geografische Unterschiede: Gibt es signifikante Unterschiede bei den durchschnittlichen Kosten zwischen den vier Regionen (`northeast`, `northwest`, `southeast`, `southwest`)?
-3. Körperliche Faktoren: Wie beeinflussen Alter und BMI (Body Mass Index) in Kombination mit anderen Faktoren (wie z.B. der Anzahl der Kinder) die individuellen Kosten
+## Project Goals
 
-##  Datensatz-Übersicht
-Der Datensatz (`insurance.csv`) enthält 7 Spalten:
+Independent exploratory data analysis (EDA) of the US Medical Insurance Costs dataset,
+identifying the key predictors of medical charges.
 
-| Spalte | Beschreibung | Datentyp |
-| :--- | :--- | :--- |
-| age | Alter des Hauptbegünstigten | Numerisch (Integer) |
-| sex | Geschlecht des Versicherungsnehmers | Kategorial (Text) |
-| bmi| Body Mass Index | Numerisch (Float) |
-| children | Anzahl der vom Versicherungsplan abgedeckten Kinder/Abhängigen | Numerisch (Integer) |
-| smoker | Raucherstatus | Kategorial (Text) |
-| region | Die Wohnregion des Begünstigten in den USA (4 Regionen) | Kategorial (Text) |
-| charges | Individuelle medizinische Kosten, die durch die Krankenversicherung in Rechnung gestellt werden | Numerisch (Float) |
+Questions explored:
 
-## Geplante Methodik
-1. Datenimport: Importieren der `insurance.csv` mit der Python `csv`-Bibliothek in eine Liste von Python-Dictionaries
-2. Datenbereinigung/Transformation: Sicherstellen, dass numerische Daten korrekt als Zahlen behandelt werden.
-3. Analyse: Entwicklung von Funktionen zur Berechnung von:
-    * Durchschnittswerten (nach Raucherstatus, Region etc.)
-    * Häufigkeiten
-    * Korrelationen (z.B. zwischen Alter und Kosten)
-4.  Ergebnispräsentation: Zusammenfassung der Ergebnisse.
+1. **Smoking impact:** What is the average cost difference between smokers and non-smokers?
+2. **Regional differences:** Are there significant cost variations across the four US regions?
+3. **Physical factors:** How do age and BMI combined with number of children affect individual charges?
 
-### Visualisierungen 
-Visualisierungen im Notebook:
-* Regionale Kosten: Ein Bar-Chart visualisiert die durchschnittlichen Kosten über die vier Regionen und bestätigt die höchsten Kosten im Südosten.
+---
 
-### Hinweis zu diesem Projekt:
-Dieses Repository dokumentiert meine ersten Schritte in der Datenanalyse mit Python. Ich habe den Code bewusst in seinem ursprünglichen Zustand gelassen (inkl. kleinerer Library-Warnungen), um meine Lernkurve authentisch abzubilden.
+## Dataset Overview
 
-Wer sehen möchte, wie ich heute sauberen, industriereifen Code und fortgeschrittene schreibe, sollte sich unbedingt mein aktuelles Portfolio [https://github.com/ContinuumHQ/portfolio] ansehen.
+The dataset (`insurance.csv`) contains 7 columns:
+
+| Column   | Description                                      | Type              |
+|----------|--------------------------------------------------|-------------------|
+| age      | Age of the primary beneficiary                   | Numeric (Integer) |
+| sex      | Gender of the policyholder                       | Categorical       |
+| bmi      | Body Mass Index                                  | Numeric (Float)   |
+| children | Number of children covered by the plan           | Numeric (Integer) |
+| smoker   | Smoking status                                   | Categorical       |
+| region   | Residential region in the US (4 regions)         | Categorical       |
+| charges  | Individual medical costs billed by insurance     | Numeric (Float)   |
+
+---
+
+## Methodology
+
+1. Data import via Python `csv` library into a list of dictionaries
+2. Type conversion and basic cleaning
+3. Functions for averages, frequencies and correlations
+4. Results summarized in the notebook
+
+### Visualizations
+
+- Bar chart: average charges by region — Southeast consistently highest
+
+---
+
+## Note on this repository
+
+This documents my starting point in data analysis with Python. Code is left in its
+original state, including minor library warnings, to authentically reflect the
+learning curve.
+
+To see how I write clean, production-grade code today, check out:
+- [hiring-gap-analysis](https://github.com/ContinuumHQ/hiring-gap-analysis) — live ETL pipeline, ML forecasting, Docker
+- [portfolio](https://github.com/ContinuumHQ/portfolio) — 3 production-ready projects with tests and docs
